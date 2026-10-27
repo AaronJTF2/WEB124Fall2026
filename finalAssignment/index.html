@@ -1,0 +1,77 @@
+<!--Aaron Cole-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet Buff, a black Labrador and American Staffordshire mix, in this interactive student website.">
+  <title>Meet Buff | My Dog</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <a class="brand" href="#home"> MEET BUFF</a>
+    <nav aria-label="Main navigation">
+      <a href="#parts">Meet Buff</a><a href="#process">Daily life</a><a href="#planner">Activity ideas</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="home" class="hero">
+      <div>
+        <p class="eyebrow">THE BESTEST BOY</p>
+        <h1>Meet Buff.<br><em>Distinguished Gentleman.</em></h1>
+        <p class="intro">Buff is my dog, a black Labrador/American Staffordshire mix. This page introduces him, explores everyday life with a dog, and lets you suggest an activity for us to try.</p>
+        <a class="button" href="#parts">Get to know Buff <span>↗</span></a>
+        <p class="micro">FOUR PAWS. ONE BUFF.</p>
+      </div>
+      <figure>
+        <img src="buff.jpg" width="620" height="640">
+      </figure>
+    </section>
+    <section id="parts" class="section">
+      <div class="section-heading"><p class="eyebrow">HERES A LITTLE ABOUT HIM</p><h2>One dog. One Buff.</h2><p>Choose a detail to learn a little about Buff.</p></div>
+      <div class="parts-layout">
+        <div id="part-buttons" class="part-buttons" role="group"></div>
+        <article class="part-detail" aria-live="polite" aria-atomic="true">
+          <p id="part-label" class="eyebrow">BUFF</p>
+          <h3 id="part-name">His name is Buff.</h3>
+          <p id="part-description">This website is all about my dog, Buff.</p>
+          <p class="part-note"><strong>Blurb:</strong> <span id="part-tip">Click the other buttons to explore the details I have shared about him.</span></p>
+        </article>
+      </div>
+      <noscript><p>Buff is my dog. He has a black coat and is a Labrador/American Staffordshire mix. Enable JavaScript to use the interactive facts and activity form.</p></noscript>
+    </section>
+    <section id="process" class="section process">
+      <div class="section-heading"><p class="eyebrow">02 / EVERYDAY ADVENTURES</p><h2>The little things matter.</h2><p>These are general activity ideas, not a record of Buff’s routine.</p></div>
+      <div class="steps">
+        <article><span class="step-number">01</span><h3>Explore together</h3><p>One of Buffs favorite activities is to explore new trails, new dog parks, new smells!</p></article>
+        <article><span class="step-number">02</span><h3>Time for play!</h3><p>His favorite toy is a Kong football, its the only toy ive found that can withstand his strength and desire to destroy things. </p></article>
+        <article><span class="step-number">03</span><h3>Time for a nap.</h3><p>Nap time is either in the living room on the couch or in our office on his bed!</p></article>
+      </div>
+      <div class="checklist"><div><h3>Plan a little time together</h3><p id="checklist-progress" >0 of 3 activity ideas selected.</p></div>
+        <div id="build-checks"><label><input type="checkbox"> Take a relaxed walk.</label><label><input type="checkbox"> Spend time playing together.</label><label><input type="checkbox"> Nap time!</label></div>
+      </div>
+    </section>
+    <section id="planner" class="section planner">
+      <div class="section-heading"><p class="eyebrow">03 / ADD AN IDEA</p><h2>What should Buff try next?</h2><p>Suggest an activity for Buff. Your suggestion stays in this browser, 
+        so you can find it again when you return.</p><p id="guide-info" class="guide-info"></p></div>
+      <div class="planner-grid">
+        <form id="build-form">
+          <label for="builder-name">Your first name</label>
+          <input id="builder-name" name="builderName" type="text" maxlength="50" required autocomplete="given-name" placeholder="e.g., Aaron">
+          <label for="build-goal">Your activity idea for Buff</label>
+          <input id="build-goal" name="buildGoal" type="text" maxlength="150" required placeholder="e.g., a walk at the park">
+          <p id="form-help" class="form-help">Enter your name and an activity idea for Buff.</p>
+          <button class="button" type="submit">Add Idea <span aria-hidden="true">↗</span></button>
+        </form>
+        <aside class="saved-plan" ><p class="eyebrow">AN IDEA FOR BUFF</p><h3 id="plan-heading">The next adventure?</h3><p id="plan-output">Your activity suggestion will appear here.</p>
+          <p id="storage-message" class="storage-message" role="status"></p><button id="clear-plan" class="text-button" type="button" hidden>Clear saved idea</button></aside>
+      </div>
+    </section>
+    <section class="sources section" id="sources"><h2>Sources</h2><p>Aaron's own Apartment</p><p id="browser-info" class="micro"></p></section>
+  </main>
+  <footer><a class="brand" href="#home">MEET BUFF</a><span>A PAGE FOR A VERY GOOD BOY.</span></footer>
+</body>
+</html>
